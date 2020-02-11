@@ -1,95 +1,131 @@
 export function loadLists() {
     return [
       { 
-        title: 'Tarefas', 
+        title: 'Café da manhã', 
         creatable: true,
         cards: [
           {
             id: 1,
-            content: 'Estudar módulo 01 de NodeJS',
+            content: 'Ovos mexidos',
             labels: ['#7159c1'],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
+            proteina: '10',
+            carboidrato: 10,
+            gordura: ''
           },
           {
             id: 2,
-            content: 'Criar vídeo para o Youtube ensinando a recriar a interface do Pipefy',
+            content: 'Leite',
             labels: ['#7159c1'],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
+            proteina: '5',
+            carboidrato: '2',
+            gordura: '5'
           },
           {
             id: 3,
-            content: 'Estudar módulo 03 de React Native',
+            content: 'Queijo',
             labels: ['#7159c1'],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
+            proteina: '3',
+            carboidrato: '3',
+            gordura: '1'
           },
           {
             id: 4,
-            content: 'Gravar Aula "NextJS: Utilizando server-side rendering com ReactJS"',
+            content: 'Pedaço de Mamão',
             labels: ['#54e1f7'],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
+            proteina: '3',
+            carboidrato: '4',
+            gordura: '2'
           },
           {
             id: 5,
-            content: 'Gravar testes e deploy ReactJS',
+            content: 'Pão',
             labels: ['#54e1f7'],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
+            proteina: '2',
+            carboidrato: '25',
+            gordura: '2'
           },
         ]
       },
       { 
-        title: 'Fazendo', 
+        title: 'Almoço', 
         creatable: false,
         cards: [
           {
             id: 6,
-            content: 'Recriando clone do Pipefy',
+            content: 'Frango',
             labels: [],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
+            proteina: '28',
+            carboidrato: '11',
+            gordura: '7'
+          },
+          {
+            id: 7,
+            content: 'Arroz',
+            labels: [],
+            proteina: '12',
+            carboidrato: '34',
+            gordura: '4'
           }
         ]
       },
       { 
-        title: 'Pausado', 
+        title: 'Café da tarde', 
         creatable: false,
         cards: [
           {
-            id: 7,
-            content: 'Gravar sobre Geolocalização e mapas com React Native',
-            labels: ['#7159c1'],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
-          },
-          {
             id: 8,
-            content: 'Gravar testes e deploy ReactJS',
-            labels: ['#54e1f7'],
-            user: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/profile.png'
+            content: 'Queijo',
+            labels: ['#7159c1'],
+            proteina: '12',
+            carboidrato: '2',
+            gordura: '4'
           },
           {
             id: 9,
-            content: 'Ajustes na biblioteca unform',
+            content: 'Suco de laranja',
+            labels: ['#54e1f7'],
+            proteina: '4',
+            carboidrato: '5',
+            gordura: '1'
+          },
+          {
+            id: 10,
+            content: 'Ricota',
             labels: [],
+            proteina: '13',
+            carboidrato: '3',
+            gordura: '4'
           }
         ]
       },
       { 
-        title: 'Concluído', 
+        title: 'Jantar', 
         creatable: false,
         done: true,
         cards: [
           {
-            id: 10,
-            content: 'Gravar aula sobre deploy e CI com React Native',
+            id: 11,
+            content: 'Peixe grelhado',
             labels: [],
+            proteina: '4',
+            carboidrato: '5',
+            gordura: '1'
           },
           {
             id: 12,
-            content: 'Gravar testes e deploy ReactJS',
+            content: 'Ovo',
             labels: ['#54e1f7'],
+            proteina: '6',
+            carboidrato: '4',
+            gordura: '4'
           },
           {
             id: 13,
-            content: 'Gravar Aula "Internacionalização de aplicações Node.js, ReactJS e React Native"',
+            content: 'Salada',
             labels: ['#7159c1'],
+            proteina: '2',
+            carboidrato: '3',
+            gordura: '1'
           }
         ]
       },

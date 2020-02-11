@@ -47,7 +47,7 @@ export const Label = styled.span`
     width: 10px;
     height: 10px;
     border-radius: 2px;
-    display: inline-block;
+    display: flex;
     background: ${props => props.color} ;
 
 `;
