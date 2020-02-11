@@ -16,7 +16,7 @@ api.interceptors.request.use(async config => {
 
 export const lista = async () => {
        
-    const response = await fetch('http://localhost:4000/cliente/inicio')
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/cliente/inicio`)
 
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
