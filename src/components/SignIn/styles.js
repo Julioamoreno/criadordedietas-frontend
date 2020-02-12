@@ -61,3 +61,14 @@ export const Form = styled.form`
     text-decoration: none;
   }
 `;
+
+export const Logo = styled.div`
+  font-size: 50px;
+    color: tomato;
+    font-family: 'Galada',cursive;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+`;

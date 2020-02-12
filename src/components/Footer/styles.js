@@ -4,13 +4,9 @@ export const Container = styled.div`
   width: 100%;
   padding: 0 30px;
   background: #D7B29D;
-  position: relative;
-  
-  bottom: -150px;
+  position:absolute;
+  bottom: 0;
   display: block;
   align-items: center;
-  @media (min-width: 1024px) {
-    bottom: -300px;
-  }
 
 `;

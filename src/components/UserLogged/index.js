@@ -6,9 +6,6 @@ import SignIn from "../SignIn/index";
 import { isAuthenticated } from "../../services/auth";
 
 class UserLogged extends React.Component{
-    constructor(props){
-        super(props)
-    }
   
   render(){
       

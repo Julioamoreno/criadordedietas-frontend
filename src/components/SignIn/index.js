@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 
-import { Form, Container } from "./styles";
+import { Form, Container, Logo } from "./styles";
 
 import api from "../../services/import";
 import { setToken } from "../../services/auth";
 
 class SignIn extends Component {
   state = {
-    username: "",
+    login: "teste",
     email: "",
-    password: "",
+    senha: "teste",
     error: ""
   };
 
-  handleSignUp = async e => {
+  handleSignin = async e => {
         e.preventDefault();
         const { login,  senha } = this.state;
         if (!login || !senha) {
-            this.setState({ error: "Preencha todos os dados para se cadastrar" });
+            this.setState({ error: "Preencha todos os dados para se logar" });
         } else {
             try {
             const response = await api.post("/users/auth", { login, senha });
@@ -39,16 +39,17 @@ class SignIn extends Component {
   render() {
     return (
       <Container>
-        <Form onSubmit={this.handleSignUp}>
+        <Form onSubmit={this.handleSignin}>
           {this.state.error && <p>{this.state.error}</p>}
+          <Logo>Criador de dietas </Logo>
           <input
             type="text"
-            placeholder="Nome de usuário"
+            placeholder="Nome de usuário : teste"
             onChange={e => this.setState({ login: e.target.value })}
           />
           <input
             type="password"
-            placeholder="Senha"
+            placeholder="Senha : teste"
             onChange={e => this.setState({ senha: e.target.value })}
           />
           <button type="submit">Fazer Login</button>

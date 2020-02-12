@@ -9,6 +9,7 @@ justify-content: center;
     .table{
         margin-left: 100px;
         margin-top: 25px;
+        
     }
     ul{
         width: 150px;
