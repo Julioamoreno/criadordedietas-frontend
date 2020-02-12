@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { lista } from '../../services/import'; //conexao com react
 
 import { Container } from './styles';
 
@@ -8,11 +7,11 @@ class Footer extends Component{
 
 
     componentDidMount(){
-        lista()
-        .then(function(res){
-           this.retorno = res.json();
-        })
-        .catch(err => console.log(err));
+        // lista()
+        // .then(function(res){
+        //    this.retorno = res.json();
+        // })
+        // .catch(err => console.log(err));
 
     }
 
@@ -22,8 +21,8 @@ class Footer extends Component{
                    
             <Container>
                 
-                <footer class="page-footer font-small green"> 
-                    <div class="footer-copyright text-center py-3">© Desenvolvido por Júlio Armando  </div>
+                <footer className="page-footer font-small green"> 
+                    <div className="footer-copyright text-center py-3">© Desenvolvido por Júlio Armando  </div>
                     
                 </footer>
             </Container>
@@ -35,8 +34,8 @@ class Footer extends Component{
                    
                 <Container>
                     
-                    <footer class="page-footer font-small green"> 
-                        <div class="footer-copyright text-center py-3">© foi   </div>
+                    <footer className="page-footer font-small green"> 
+                        <div className="footer-copyright text-center py-3">© foi   </div>
                         
                     </footer>
                 </Container>

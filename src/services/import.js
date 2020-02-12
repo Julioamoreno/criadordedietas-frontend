@@ -14,14 +14,14 @@ api.interceptors.request.use(async config => {
 });
 
 
-export const lista = async () => {
+// export const lista = async () => {
        
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/cliente/inicio`)
+//     const response = await fetch(`${process.env.REACT_APP_API_URL}/cliente/inicio`)
 
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
+//     const body = await response.json();
+//     if (response.status !== 200) throw Error(body.message);
 
-    return body;
-}
+//     return body;
+// }
 
 export default api;

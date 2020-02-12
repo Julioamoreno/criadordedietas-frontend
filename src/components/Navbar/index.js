@@ -14,11 +14,11 @@ class Navbar extends Component{
                 <ul>
                     <li className="brand"><a href="/">Criador de Dietas</a></li>
                     <ul className="lista">
-                        <li className="item"><a id="home" href="#home" onclick="curSec(this.id)">Home</a></li>
-                        <li className="item"><a id="news" href="#news" onclick="curSec(this.id)">Notícias</a></li>
-                        <li className="item"><a id="contact" href="#contact" onclick="curSec(this.id)">Sobre</a></li>
+                        <li className="item"><a id="home" href="#home">Home</a></li>
+                        <li className="item"><a id="news" href="#news">Notícias</a></li>
+                        <li className="item"><a id="contact" href="#contact">Sobre</a></li>
                         <li className="user">
-                             {localStorage.getItem("user")} <a href="/" onclick={logout}> <img className="btnSair" src={Sair} alt="Sair" /> 
+                             {localStorage.getItem("user")} <a href="/" onClick={logout}> <img className="btnSair" src={Sair} alt="Sair" /> 
                              </a>
                         </li>
                         
