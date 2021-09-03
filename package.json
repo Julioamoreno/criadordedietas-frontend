@@ -11,7 +11,7 @@
     "bcrypt-nodejs": "^0.0.3",
     "cors": "^2.8.5",
     "express-session": "^1.17.0",
-    "immer": "^5.1.0",
+    "immer": "^9.0.6",
     "method-override": "^3.0.0",
     "mongoose": "^5.8.3",
     "mongoose-type-email": "^1.0.11",
